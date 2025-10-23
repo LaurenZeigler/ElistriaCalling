@@ -71,5 +71,9 @@ void AMagickPlayerState::SetupAbilityActorInfo()
 			ElistriaAbilitySystemComponent->AddAttributeSetSubobject(LevelSet.Get());
 		}
 	}
-	
+}
+void AMagickPlayerState::OnRep_ElistriaAbilitySystemComponent()
+{
+	// Whenever the ability system component is replicated, we need to refresh the actor info
+	return;
 }
